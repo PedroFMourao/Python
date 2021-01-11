@@ -1,0 +1,24 @@
+print('Vamos calcular temperaturas? ')
+print('''[1] De Celsius para Fahrenheit
+[2] De Fahrenheit para Celsius
+[3] De Kelvin para Celsius
+[4] De Celsius para Kelvin
+[5] De Kelvin para Fahrenheit''')
+n1 = int(input('Qual você escolhe? '))
+if n1 == 1:
+    CpF = float(input('Digite seu número em Celsius:'))
+    print('De Celsius para Fahrenheit fica {}°F'.format(CpF * (9.0/5.0) + 32))
+elif n1 == 2:
+    FpC = float(input('Digite um número em Fahrenheit:'))
+    print('De Fahrenheit para Celsius fica {}°C'.format(5.0 * (FpC - 32)/9.0))
+elif n1 == 3:
+    KpC = float(input('Digite um número em Kelvin:'))
+    print('De Kelvin para Celsius fica {}°C'.format(KpC - 273.15))
+elif n1 == 4:
+    CpK = float(input('Digite um número em Calsius:'))
+    print('De Celsius para Kelvin fica {} K'.format(CpK + 273.15))
+elif n1 == 5:
+    KpF = float(input('Digite um número em Kelvin:'))
+    print('De Kelvin para Fahrenheit fica {}°F'.format(1.8 * (KpF - 273) + 32))
+elif n1 >= 6:
+    print('São apenas 5 opções!')
