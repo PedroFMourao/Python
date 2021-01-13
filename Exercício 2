@@ -1,0 +1,13 @@
+#Programa para ajudar vendedores
+n1 = float(input('Digite o valor final da compra: R$'))
+tot = (n1 * 10)/100
+total = n1 - tot
+print('O total a pagar com desconto de 10% é R${}'.format(total))
+
+print('No caso de parcelar em 3x ficaria R${:.2f}'.format(n1/3))
+
+va = (total*5)/100
+print('O vendedor irá ter 5% de comissão sobre a venda á vista (juntamente com o desconto), que será de R${}'.format(va))
+
+vp = (n1 *5)/100
+print('O vendedor irá ter 5% de comissão no valor total do produto se houver parcelamento de até 3x, que irá dar R${}'.format(vp))
