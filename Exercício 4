@@ -1,0 +1,12 @@
+# Calcular média do aluno
+n1 = float(input('Qual sua nota do Trabalho de Laboratório? '))
+n2 = float(input('Qual sua nota na Avaliação Semestral? '))
+n3 = float(input('Qual sua nota no Exame Final? '))
+media = (n1 + n2 + n3) / 3
+print('{:.2f}'.format(media))
+if media <= 2.9:
+    print('Reprovado')
+elif media <= 4.9:
+    print('Recuperação')
+else:
+    print('Aprovado')
