@@ -1,0 +1,11 @@
+from time import sleep
+print('=====Vamos calcular a área de um trapézio?=====')
+basemenor = float(input('Qual a base menor? '))
+basemaior = float(input('Qual a base maior? '))
+altura = float(input('Qual a altura? '))
+print('Calculando...')
+sleep(2)
+if basemaior > 0 and basemenor > 0:
+    print('O valor dessa área é de {}'.format(((basemenor+basemaior)*altura)/2))
+else:
+    print('Cálculo inválido, a base menor e a base maior não podem ser igual a zero')
